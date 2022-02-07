@@ -8,18 +8,10 @@ class ChooseLocation extends StatefulWidget {
 }
 
 class _ChooseLocationState extends State<ChooseLocation> {
-  void getData() async {
-    await Future.delayed(Duration(seconds: 3), () {
-      print('youshi');
-    });
-    print("Statement");
-  }
-
   @override
   void initState() {
     super.initState();
     // print("this is inside initState");
-    getData();
   }
 
   @override
