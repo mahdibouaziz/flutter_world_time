@@ -19,6 +19,7 @@ class _LoadingState extends State<Loading> {
       'location': worldTime.location,
       'flag': worldTime.flag,
       'time': worldTime.time,
+      'isDaytime': worldTime.isDaytime
     });
   }
 
@@ -32,7 +33,7 @@ class _LoadingState extends State<Loading> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue[900],
-      body: Center(
+      body: const Center(
         child: SpinKitSpinningLines(
           color: Colors.white,
           size: 80.0,

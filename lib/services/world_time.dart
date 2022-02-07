@@ -8,6 +8,7 @@ class WorldTime {
   String flag;
   String url;
 
+  late bool isDaytime;
   late String time;
 
   WorldTime({required this.location, required this.flag, required this.url});
@@ -32,6 +33,7 @@ class WorldTime {
       // print(now);
 
       // set the global time property
+      isDaytime = now.hour > 6 && now.hour < 20 ? true : false;
       time = DateFormat.jm().format(now);
     } catch (e) {
       print("error: $e");
